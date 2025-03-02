@@ -1,0 +1,14 @@
+# Este programa aploca un descuento segun el precio del producto.
+
+precio = float(input("Ingresa el precio del producto: $"))
+if precio < 50:
+    descuento = 0
+    print(f"El precio final es: ${precio:.2f}. No se aplica descuento.")
+elif 50 <= precio <= 100:
+    descuento = precio * 0.05  # 5% de descuento
+    precio_final = precio - descuento
+    print(f"El precio final es: ${precio_final:.2f}. Se aplica un descuento del 5%.")
+else:
+    descuento = precio * 0.10  # 10% de descuento
+    precio_final = precio - descuento
+    print(f"El precio final es: ${precio_final:.2f}. Se aplica un descuento del 10%.")
